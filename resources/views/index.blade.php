@@ -116,7 +116,7 @@ nav ul li a:hover {
 
 
 #contact {
-    background-color: #fafad2;
+    background-color: #ffffff;
     padding: 30px;
     height: 10vh;
 }
@@ -155,7 +155,7 @@ nav ul li a:hover {
         <ul>
             <li><a href="javascript:void(0)" onclick="showContent('home')">Home</a></li>
             <li><a href="javascript:void(0)" onclick="showContent('about')">About</a></li>
-            <li><a href="javascript:void(0)" onclick="showContent('content')">Contact</a></li>
+            <li><a href="javascript:void(0)" onclick="showContent('contact')">Contact</a></li>
         </ul>
     </nav>
 
@@ -184,7 +184,7 @@ nav ul li a:hover {
 </div>
 
 
-<div id="content" class="section" style="display: none;">
+<div id="contact" class="section" style="display: none;">
     <div class="contact-container">
         <h2>Contact</h2>
         <li><a href="https://mail.google.com/mail/u/0/?tf=cm&fs=1&to=judhapratamaa@gmail.com">Email</a></li>
@@ -197,7 +197,7 @@ nav ul li a:hover {
 
 <script>
     function showContent(page) {
-        let sections = ['home', 'about', 'content'];
+        let sections = ['home', 'about', 'contact'];
         sections.forEach(id => {
             let section = document.getElementById(id);
             if (id === page) {
